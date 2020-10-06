@@ -25,4 +25,4 @@ Route::resource('users','UsersController');
 //会话
 Route::get('login','SessionsController@create')->name('login');
 Route::post('login','SessionsController@store')->name('login');
-Route::get('logout','SessionsController@logout')->name('logout');
+Route::delete('logout','SessionsController@destory')->name('logout');
