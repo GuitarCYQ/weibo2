@@ -30,3 +30,6 @@ Route::delete('logout','SessionsController@destory')->name('logout');
 
 //用户的crud
 Route::get('/users/{user}/edit','UsersController@edit')->name('users.edit');
+
+//邮箱验证
+Route::get('signup/confirm/{token}','UsersController@confirmEmail')->name('confirm_email');
