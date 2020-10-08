@@ -11,6 +11,5 @@ const mix = require('laravel-mix');
  |
  */
 
-//version()解决浏览器缓存问题
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').version();
+    .sass('resources/sass/app.scss', 'public/css');
